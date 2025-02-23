@@ -12,8 +12,56 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
-import { Testimonials } from "./components/Testimonials";
+// import { Testimonials } from "./components/Testimonials";
+import { AnimatedTestimonials } from "./components/Testimonials";
 import "./App.css";
+
+type Testimonial = {
+  quote: string;
+  name: string;
+  designation: string;
+  src: string;
+};
+
+const testimonials: Testimonial[] = [
+  {
+    quote: "This landing page is awesome!",
+    name: "John Doe React",
+    designation: "@john_Doe",
+    src: "https://github.com/shadcn.png",
+  },
+  {
+      quote: "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+    name: "John Doe React",
+    designation: "@john_Doe1",
+    src: "https://github.com/shadcn.png",
+  },
+
+  {
+    quote: "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    name: "John Doe React",
+    designation: "@john_Doe2",
+    src: "https://github.com/shadcn.png",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    name: "John Doe React",
+    designation: "@john_Doe3",
+    src: "https://github.com/shadcn.png",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    name: "John Doe React",
+    designation: "@john_Doe4",
+    src: "https://github.com/shadcn.png",
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "John Doe React",
+    designation: "@john_Doe5",
+    src: "https://github.com/shadcn.png",
+  },
+];
 
 function App() {
   return (
@@ -26,7 +74,7 @@ function App() {
       <Features />
       <Services />
       <Cta />
-      <Testimonials />
+      <AnimatedTestimonials testimonials={testimonials} />
       <Team />
       <Pricing />
       <Newsletter />
