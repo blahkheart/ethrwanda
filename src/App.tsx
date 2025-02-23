@@ -12,8 +12,8 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
-// import { Testimonials } from "./components/Testimonials";
 import { AnimatedTestimonials } from "./components/Testimonials";
+import { MissionVision } from "./components/MissionVision";
 import "./App.css";
 
 type Testimonial = {
@@ -68,6 +68,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <MissionVision />
       <Sponsors />
       <About />
       <HowItWorks />
