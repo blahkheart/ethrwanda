@@ -273,10 +273,10 @@ const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = ({
   const [isDragging, setIsDragging] = useState(false);
 
   return (
-    <div className="container px-4 py-8">
-      <div className="mb-8 text-center">
+    <div className="container px-4 py-8 mt-32">
+      <div className="mb-28 text-center">
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl font-bold bg-clip-text text-transparent 
+          className="text-2xl mb-8 sm:text-3xl md:text-5xl font-bold bg-clip-text text-transparent 
                              bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900
                              dark:from-white dark:via-gray-200 dark:to-white"
           initial={{ opacity: 0, y: 20 }}

@@ -55,7 +55,7 @@ const PastEvents = () => {
       {/* Content */}
       <div className="relative z-10 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl lg:text-6xl font-bold text-center mb-44 text-white">
+          <h2 id="past-events" className="text-4xl lg:text-6xl font-bold text-center mb-44 text-white">
             Past Events & Workshops
           </h2>
 
@@ -64,15 +64,15 @@ const PastEvents = () => {
               <PastEventsTimeline />
             </div>
 
-            <div>
+            <div id="gallery">
               <div className="grid grid-cols-1">
                 <PastEventsGallery />
               </div>
             </div>
           </div>
 
-          <div className="my-40">
-            <h3 className="text-2xl lg:text-4xl text-center font-bold text-white mb-16">Interviews</h3>
+          <div id="interviews" className="my-40">
+            <h3 className="text-3xl lg:text-5xl text-center font-bold mb-16">Interviews</h3>
             <div className="grid grid-cols-1 gap-4">
               <InterviewCarousel interviews={interviews} />
             </div>

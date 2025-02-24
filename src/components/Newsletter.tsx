@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Subscribed!");
   };
@@ -11,15 +11,15 @@ export const Newsletter = () => {
     <section id="newsletter">
       <hr className="w-11/12 mx-auto" />
 
-      <div className="container py-24 sm:py-32">
-        <h3 className="text-center text-4xl md:text-5xl font-bold">
-          Join Our Daily{" "}
+      <div className="container py-24 sm:py-48">
+        <h3 className="text-center text-4xl md:text-5xl font-bold mb-8">
+          Join Our{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
             Newsletter
           </span>
         </h3>
-        <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+        <p className="text-xl text-muted-foreground text-center mt-4 mb-16">
+          Get the latest news and updates from the community.
         </p>
 
         <form

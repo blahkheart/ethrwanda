@@ -1,10 +1,10 @@
-import { About } from "./components/About";
+// import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
 // import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
-import { HowItWorks } from "./components/HowItWorks";
+import { Initiatives } from "./components/Initiatives";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
 // import { Pricing } from "./components/Pricing";
@@ -77,12 +77,12 @@ function App() {
       <PastEvents />
       <MissionVision />
       <Sponsors />
-      <About />
-      <HowItWorks />
+      {/* <About /> */}
+      <Initiatives />
       {/* <Features /> */}
       {/* <Services /> */}
-      <Cta />
       <AnimatedTestimonials testimonials={testimonials} />
+      <Cta />
       <Team />
       {/* <Pricing /> */}
       <Newsletter />

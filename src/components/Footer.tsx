@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import ethRwandaLogo from "../assets/eth-rwanda-logo.png";
 
 export const Footer = () => {
   return (
@@ -10,10 +10,14 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <img
+              src={ethRwandaLogo}
+              alt="EThereum Rwanda Logo"
+              className="w-10 h-10 mr-2"
+            />
+            ETH Rwanda
           </a>
         </div>
 
@@ -25,7 +29,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              Instagram
             </a>
           </div>
 
@@ -35,50 +39,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              X
             </a>
           </div>
         </div>
@@ -88,30 +49,30 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#initiatives"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              Initiatives
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#gallery"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              Gallery
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#interviews"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              Interviews
             </a>
           </div>
         </div>
@@ -131,37 +92,18 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://chat.whatsapp.com/KYkYE8C2VUBCvM1gv7mQq8"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
+              WhatsApp
             </a>
           </div>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
+        <h3>&copy; 2025 ETH Rwanda</h3>
       </section>
     </footer>
   );

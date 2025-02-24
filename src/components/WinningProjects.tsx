@@ -1,7 +1,7 @@
 import { Gallery6 } from "@/components/ui/gallery6";
 
 const demoData = {
-  heading: "ETH Rwanda Hackathon Genesis Featured Projects",
+  heading: "ETH Rwanda Hackathon Genesis 2024 Winners",
   demoUrl: "https://hackathon.ethrwanda.rw",
   items: [
     {

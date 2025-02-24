@@ -122,7 +122,7 @@ export const Sponsors = () => {
           Partners
         </h2>
 
-        <div className="flex flex-wrap justify-center items-center mb-36">
+        <div className="flex flex-wrap justify-center items-center mb-28">
           <Marquee direction="right" speed={15}>
             {sponsorsLogos.map((Logo, index) => (
               <div
