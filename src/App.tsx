@@ -15,6 +15,7 @@ import { Team } from "./components/Team";
 import { AnimatedTestimonials } from "./components/Testimonials";
 import { MissionVision } from "./components/MissionVision";
 import "./App.css";
+import PastEvents from "./components/PastEvents";
 
 type Testimonial = {
   quote: string;
@@ -68,6 +69,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <PastEvents />
       <MissionVision />
       <Sponsors />
       <About />
