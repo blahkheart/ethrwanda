@@ -58,23 +58,7 @@ export function PastEventsGallery() {
         desc: "Peaceful Shiva sanctuary.",
         url: "https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4",
         span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
-      },
-      {
-        id: 8,
-        type: "image",
-        title: "Anurag Mishra",
-        desc: "Driven, innovative, visionary",
-        url: "https://kxptt4m9j4.ufs.sh/f/9YHhEDeslzkcbP3rYTiXwH7Y106CepJOsoAgQjyFi3MUfDkh",
-        span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
-      },
-      {
-        id: 9,
-        type: "image",
-        title: "Anurag Mishra",
-        desc: "Driven, innovative, visionary",
-        url: "https://kxptt4m9j4.ufs.sh/f/9YHhEDeslzkcbP3rYTiXwH7Y106CepJOsoAgQjyFi3MUfDkh",
-        span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2",
-      },
+      }
     ];
 
   return (

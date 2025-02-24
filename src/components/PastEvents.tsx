@@ -4,6 +4,33 @@ import { useState, useEffect } from "react";
 import useParticleProperties from "@/hooks/useParticleProperties";
 import { PastEventsTimeline } from "./EventsTimeline";
 import { PastEventsGallery } from "./PastEventsGallery";
+import { InterviewCarousel } from "./InterviewsCarousel";
+
+const interviews = [
+  {
+    id: 1,
+    title: "Interview with John Doe",
+    description: "Discussing the future of web development",
+    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
+    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+  },
+  {
+    id: 1,
+    title: "Interview with John Doe",
+    description: "Discussing the future of web development",
+    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
+    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+  },
+  {
+    id: 1,
+    title: "Interview with John Doe",
+    description: "Discussing the future of web development",
+    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
+    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+  },
+  // ... more interviews
+];
+
 
 
 const PastEvents = () => {
@@ -37,18 +64,17 @@ const PastEvents = () => {
               <PastEventsTimeline />
             </div>
 
-            <div >
-              {/* <h3 className="text-2xl font-bold mb-4 text-white">Gallery</h3> */}
+            <div>
               <div className="grid grid-cols-1">
                 <PastEventsGallery />
               </div>
             </div>
           </div>
 
-          <div className="mt-8 bg-white/10 backdrop-blur-md rounded-xl p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">Interviews</h3>
+          <div className="my-40">
+            <h3 className="text-2xl lg:text-4xl text-center font-bold text-white mb-16">Interviews</h3>
             <div className="grid grid-cols-1 gap-4">
-              {/* Add interview videos here */}
+              <InterviewCarousel interviews={interviews} />
             </div>
           </div>
 
