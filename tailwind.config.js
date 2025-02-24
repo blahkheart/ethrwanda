@@ -77,6 +77,13 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        marquee: "marquee var(--duration, 30s) linear infinite",
+        "marquee-reverse":
+          "marquee-reverse var(--duration, 30s) linear infinite",
+      },
+      backgroundImage: {
+        "grid-pattern": "your-pattern-value-here",
+        "grid-pattern-light": "your-pattern-value-here",
       },
     },
   },

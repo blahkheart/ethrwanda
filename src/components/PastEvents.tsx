@@ -79,12 +79,7 @@ const PastEvents = () => {
           </div>
 
           <div className="mt-11 mb-40">
-            {/* <h3 className="text-2xl font-bold mb-4 text-white">
-              Winning Projects
-            </h3> */}
-            <div>
-              <WinningProjects />
-            </div>
+            <WinningProjects />
           </div>
         </div>
       </div>
