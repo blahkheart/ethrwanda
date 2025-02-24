@@ -5,7 +5,7 @@ import useParticleProperties from "@/hooks/useParticleProperties";
 import { PastEventsTimeline } from "./EventsTimeline";
 import { PastEventsGallery } from "./PastEventsGallery";
 import { InterviewCarousel } from "./InterviewsCarousel";
-
+import { WinningProjects } from "./WinningProjects";
 const interviews = [
   {
     id: 1,
@@ -78,12 +78,12 @@ const PastEvents = () => {
             </div>
           </div>
 
-          <div className="mt-8 bg-white/10 backdrop-blur-md rounded-xl p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">
+          <div className="mt-11 mb-40">
+            {/* <h3 className="text-2xl font-bold mb-4 text-white">
               Winning Projects
-            </h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              {/* Add winning projects here */}
+            </h3> */}
+            <div>
+              <WinningProjects />
             </div>
           </div>
         </div>
