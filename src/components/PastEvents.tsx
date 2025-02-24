@@ -3,7 +3,7 @@ import { useTheme } from "./theme-provider";
 import { useState, useEffect } from "react";
 import useParticleProperties from "@/hooks/useParticleProperties";
 import { PastEventsTimeline } from "./EventsTimeline";
-
+import { PastEventsGallery } from "./PastEventsGallery";
 
 
 const PastEvents = () => {
@@ -37,17 +37,17 @@ const PastEvents = () => {
               <PastEventsTimeline />
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6">
-              <h3 className="text-2xl font-bold mb-4 text-white">Gallery</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {/* Add images and videos here */}
+            <div >
+              {/* <h3 className="text-2xl font-bold mb-4 text-white">Gallery</h3> */}
+              <div className="grid grid-cols-1">
+                <PastEventsGallery />
               </div>
             </div>
           </div>
 
           <div className="mt-8 bg-white/10 backdrop-blur-md rounded-xl p-6">
             <h3 className="text-2xl font-bold mb-4 text-white">Interviews</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {/* Add interview videos here */}
             </div>
           </div>
