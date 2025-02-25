@@ -2,7 +2,9 @@
 
 ## Built with <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-A community website for ETH Rwanda, focused on building an active Ethereum community through education, collaboration, and innovation. <a href="https://ethrwanda.rw" target="_blank">Live Demo</a>
+A community website for ETH Rwanda, focused on building an active Ethereum community through education, collaboration, and innovation. <a href="https://ethrwanda.rw" target="_blank">Visit ETH Rwanda</a>
+
+> This project is forked from [shadcn-landing-page](https://github.com/leoMirandaa/shadcn-landing-page) and customized for ETH Rwanda community needs.
 
 ## Sections
 
