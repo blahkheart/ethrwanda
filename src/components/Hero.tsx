@@ -1,20 +1,10 @@
-// import { Button } from "./ui/button";
-// import { buttonVariants } from "./ui/button";
-// import { HeroCards } from "./HeroCards";
-// import { GitHubLogoIcon } from "@radix-ui/react-icons";
-
-// import { BackgroundPaths } from "@/components/ui/background-paths";
 import { HeroParallax } from "./ui/hero-parallax";
-
-// export function DemoBackgroundPaths() {
-//   return <BackgroundPaths title="Background Paths" />;
-// }
 
 const products = [
   {
     title: "ETH Rwanda Community",
     link: "/community",
-    thumbnail: "https://github.com/shadcn.png", // Using the same image from testimonials
+    thumbnail: "https://github.com/shadcn.png",
   },
   {
     title: "Web3 Development",
