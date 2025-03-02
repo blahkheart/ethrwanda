@@ -6,27 +6,61 @@ import { PastEventsTimeline } from "./EventsTimeline";
 import { PastEventsGallery } from "./PastEventsGallery";
 import { InterviewCarousel } from "./InterviewsCarousel";
 import { WinningProjects } from "./WinningProjects";
+
 const interviews = [
   {
     id: 1,
-    title: "Interview with John Doe",
-    description: "Discussing the future of web development",
-    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
-    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+    title: "Interview with Katrina Chi",
+    description: "Discussing her experience with ETH Rwanda",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_katrina_chi.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
   },
   {
-    id: 1,
-    title: "Interview with John Doe",
-    description: "Discussing the future of web development",
-    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
-    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+    id: 2,
+    title: "Interview with First Team",
+    description: "Discussing their project at ETH Rwanda Hackathon",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_first_team.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/first_team.mp4",
   },
   {
-    id: 1,
-    title: "Interview with John Doe",
-    description: "Discussing the future of web development",
-    thumbnailSrc: "https://startup-template-sage.vercel.app/hero-dark.png",
-    videoSrc: "https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb",
+    id: 3,
+    title: "Interview with Fourth Team",
+    description: "Discussing their project at ETH Rwanda Hackathon",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_fourth_team.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+  },
+  {
+    id: 4,
+    title: "Interview with RCA Instructor",
+    description: "Talking about the RCA program",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_rca_instructor.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+  },
+  {
+    id: 5,
+    title: "Interview with Second Team",
+    description: "Discussing their project at ETH Rwanda Hackathon",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_2nd_team.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+  },
+  {
+    id: 6,
+    title: "Interview with Third Team",
+    description: "Discussing their project at ETH Rwanda Hackathon",
+    thumbnailSrc:
+      "https://p2einferno.com/eth-rwanda/interview_thumbnails/interview_3rd_team.png",
+    videoSrc:
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
   },
   // ... more interviews
 ];
