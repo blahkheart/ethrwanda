@@ -63,7 +63,7 @@ export function PastEventsGallery() {
 
   return (
     <div>
-      <InteractiveBentoGallery mediaItems={mediaItems} title="Gallery" description="Explore our collection of images and videos" />
+      <InteractiveBentoGallery mediaItems={mediaItems} title="Gallery"  />
     </div>
   );
 }
