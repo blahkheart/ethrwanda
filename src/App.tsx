@@ -12,6 +12,9 @@ import { AnimatedTestimonials } from "./components/Testimonials";
 import { MissionVision } from "./components/MissionVision";
 import "./App.css";
 import PastEvents from "./components/PastEvents";
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { LoadingScreen } from "./components/ui/loading";
 
 type Testimonial = {
   quote: string;
@@ -66,22 +69,61 @@ const testimonials: Testimonial[] = [
 ];
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Check if all images are loaded
+    const loadImages = async () => {
+      const images = document.querySelectorAll("img");
+      const promises = Array.from(images).map((img) => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve) => {
+          img.onload = resolve;
+          img.onerror = resolve;
+        });
+      });
+
+      await Promise.all(promises);
+    };
+
+    // Check both DOM content and image loading
+    Promise.all([
+      // Wait for DOM content
+      document.readyState === "complete"
+        ? Promise.resolve()
+        : new Promise((resolve) => {
+            window.addEventListener("load", resolve, { once: true });
+          }),
+      // Wait for images
+      loadImages(),
+    ]).then(() => {
+      // Add a small buffer to ensure smooth transition
+      setTimeout(() => setIsLoading(false), 300);
+    });
+  }, []);
+
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <PastEvents />
-      <MissionVision />
-      <Sponsors />
-      <Initiatives />
-      <AnimatedTestimonials testimonials={testimonials} />
-      <Cta />
-      <Team />
-      <Newsletter />
-      <FAQ />
-      <Footer />
-      <ScrollToTop />
-    </>
+    <AnimatePresence mode="wait">
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Navbar />
+          <Hero />
+          <PastEvents />
+          <MissionVision />
+          <Sponsors />
+          <Initiatives />
+          <AnimatedTestimonials testimonials={testimonials} />
+          <Cta />
+          <Team />
+          <Newsletter />
+          <FAQ />
+          <Footer />
+          <ScrollToTop />
+        </>
+      )}
+    </AnimatePresence>
   );
 }
 
