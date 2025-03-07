@@ -64,7 +64,6 @@ const interviews = [
     videoSrc:
       "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
   },
-  // ... more interviews
 ];
 
 const PastEvents = () => {

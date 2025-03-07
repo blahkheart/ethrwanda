@@ -8,7 +8,8 @@ import {
   projectPresentation,
   technicalWorkshop1_1,
   nonTechnicalWorkshop2_1,
-  nonTechnicalWorkshop2_3,  
+  nonTechnicalWorkshop2_3,
+  nonTechnicalWorkshop2_4,
 } from "../assets/images";
 
 export function PastEventsGallery() {
@@ -49,9 +50,9 @@ export function PastEventsGallery() {
     {
       id: 5,
       type: "image",
-      title: "ETH Rwanda Hackathon: Genesis | Project Presentation",
-      desc: "Innovative project showcase",
-      url: projectPresentation,
+      title: "Ethereum For Everyone | Non-Technical Workshop",
+      desc: "Blockchain for everyone",
+      url: nonTechnicalWorkshop2_4,
       span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
     },
     {
@@ -85,6 +86,14 @@ export function PastEventsGallery() {
       desc: "Blockchain for everyone",
       url: nonTechnicalWorkshop2_3,
       span: "md:col-span-1 md:row-span-3 sm:col-span-1 sm:row-span-2 ",
+    },
+    {
+      id: 10,
+      type: "image",
+      title: "ETH Rwanda Hackathon: Genesis | Project Presentation",
+      desc: "Innovative project showcase",
+      url: projectPresentation,
+      span: "md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2"
     },
   ];
 

@@ -161,10 +161,6 @@ export const Team = () => {
                   {position}
                 </CardDescription>
               </CardHeader>
-              {/* 
-              <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </CardContent> */}
 
               <CardFooter>
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (

@@ -24,7 +24,7 @@ import nonTechnicalWorkshop1 from "./non_technical_workshop/A7403599.webp";
 import nonTechnicalWorkshop2_1 from "./non_technical_workshop/A7403649-Enhanced-NR.webp";
 import nonTechnicalWorkshop2_2 from "./non_technical_workshop/A7403646-Enhanced-NR.webp";
 import nonTechnicalWorkshop2_3 from "./non_technical_workshop/A7403663-Enhanced-NR.webp";
-
+import nonTechnicalWorkshop2_4 from "./non_technical_workshop/non_technical_workshop_2x.webp";
 // Project Presentation
 import projectPresentation from "./project_presentation/A7404598.webp";
 
@@ -42,8 +42,6 @@ import testimonial3 from "./testimonials/testimonial_3.webp";
 import testimonial4 from "./testimonials/testimonial_4.webp";
 
 import team1 from "./team/team_1.webp";
-// import team2 from "./team/team_2.webp";
-// import team3 from "./team/team_3.webp";
 import team4 from "./team/team_4.webp";
 
 import medRecordChain from "../med_record_chain.webp";
@@ -75,6 +73,8 @@ export {
   nonTechnicalWorkshop2_1,
   nonTechnicalWorkshop2_2,
   nonTechnicalWorkshop2_3,
+  nonTechnicalWorkshop2_4,
+  
 
   // Project Presentation
   projectPresentation,

@@ -10,18 +10,18 @@ import {
 } from "@/assets/logos";
 import { useTheme } from "@/components/theme-provider";
 const sponsors = [unlockLogo, bgLogo, espLogoBlack];
-const partners = [makerStudioLogo, kpakLogo, abiLogo, p2eInfernoLogo];
+const partners = [kpakLogo, makerStudioLogo, abiLogo, p2eInfernoLogo];
 
 export const Sponsors = () => {
   const { theme } = useTheme();
   const getSponsorClassNames = (index: number) =>
     `bg-white backdrop-blur-sm rounded-xl ${
-      index === 0 ? "p-0" : "p-6"
+      index === 0 ? "py-2 px-5" : "p-6"
     } transition-all duration-300 shadow-lg`;
 
   const getPartnerClassNames = (index: number) =>
     `bg-white backdrop-blur-sm rounded-xl ${
-      index < 2 ? "p-0" : "p-6"
+      index < 1 ? "p-0" : "p-4"
     } transition-all duration-300 shadow-lg`;
 
   return (

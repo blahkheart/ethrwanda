@@ -22,6 +22,7 @@ import {
   testimonial3,
   testimonial4,
 } from "@/assets/images";
+import { Contact } from "./components/Contact";
 
 type Testimonial = {
   quote: string;
@@ -39,16 +40,15 @@ const testimonials: Testimonial[] = [
     src: testimonial1,
   },
   {
-    quote:
-      "This is a very good thing, it is a very good kind of idea. One thing most Rwandans fear about cryptocurrency, forex trading and things like that is scamming, but for me what I learnt from Ethereum is this is not a scam, it is a very real thing that works!",
-    name: "Ben Ishimwe",
+    quote: "Being part of ETH-Rwanda has been an incredible journey for me. From the moment I joined, I felt welcomed into a community that’s not just passionate about blockchain, but also deeply committed to helping developers like me grow. ETH-Rwanda gave me my first real chance to showcase my skills at the ETH-Rwanda Hackathon, where I got to collaborate, learn, and even walk away with a prize! Beyond that, the knowledge, connections, and opportunities I’ve gained from this community are unmatched. I’m truly grateful to be part of ETH-Rwanda, and I’m excited to keep growing alongside this amazing team — and I’m confident this is just the beginning of many more wins with ETH-Rwanda by my side!",
+    name: "Jonas Sebera",
     designation: "Participant",
     src: testimonial2,
   },
   {
     quote:
-      "Being part of ETH-Rwanda has been an incredible journey for me. From the moment I joined, I felt welcomed into a community that’s not just passionate about blockchain, but also deeply committed to helping developers like me grow. ETH-Rwanda gave me my first real chance to showcase my skills at the ETH-Rwanda Hackathon, where I got to collaborate, learn, and even walk away with a prize! Beyond that, the knowledge, connections, and opportunities I’ve gained from this community are unmatched. I’m truly grateful to be part of ETH-Rwanda, and I’m excited to keep growing alongside this amazing team — and I’m confident this is just the beginning of many more wins with ETH-Rwanda by my side!",
-    name: "Jonas Sebera",
+      "This is a very good thing, it is a very good kind of idea. One thing most Rwandans fear about cryptocurrency, forex trading and things like that is scamming, but for me what I learnt from Ethereum is this is not a scam, it is a very real thing that works!",
+    name: "Ben Ishimwe",
     designation: "Participant",
     src: testimonial3,
   },
@@ -104,6 +104,7 @@ function App() {
       <Team />
       <Newsletter />
       <FAQ />
+      <Contact />
       <Footer />
       <ScrollToTop />
     </AnimatePresence>
