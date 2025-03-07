@@ -16,6 +16,12 @@ import { useEffect, useState, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import { LoadingScreen } from "./components/ui/loading";
 import { Skeleton } from "@/components/ui/skeleton";
+import {
+  testimonial1,
+  testimonial2,
+  testimonial3,
+  testimonial4,
+} from "@/assets/images";
 
 type Testimonial = {
   quote: string;
@@ -26,46 +32,32 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "This landing page is awesome!",
-    name: "John Doe React",
-    designation: "@john_Doe",
-    src: "https://github.com/shadcn.png",
+    quote:
+      "If you’re thinking of coming to an ETH Rwanda event, I was say definitely do it tech and the digital advancement is part of the new frontier of humanity and society and learning how to work with these kinds of programs as opposed to fearing them because they’re unknown is overall helpful",
+    name: "Kameelah",
+    designation: "Participant",
+    src: testimonial1,
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-    name: "John Doe React",
-    designation: "@john_Doe1",
-    src: "https://github.com/shadcn.png",
-  },
-
-  {
-    quote:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-    name: "John Doe React",
-    designation: "@john_Doe2",
-    src: "https://github.com/shadcn.png",
+      "This is a very good thing, it is a very good kind of idea. One thing most Rwandans fear about cryptocurrency, forex trading and things like that is scamming, but for me what I learnt from Ethereum is this is not a scam, it is a very real thing that works!",
+    name: "Ben Ishimwe",
+    designation: "Participant",
+    src: testimonial2,
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
-    name: "John Doe React",
-    designation: "@john_Doe3",
-    src: "https://github.com/shadcn.png",
+      "Being part of ETH-Rwanda has been an incredible journey for me. From the moment I joined, I felt welcomed into a community that’s not just passionate about blockchain, but also deeply committed to helping developers like me grow. ETH-Rwanda gave me my first real chance to showcase my skills at the ETH-Rwanda Hackathon, where I got to collaborate, learn, and even walk away with a prize! Beyond that, the knowledge, connections, and opportunities I’ve gained from this community are unmatched. I’m truly grateful to be part of ETH-Rwanda, and I’m excited to keep growing alongside this amazing team — and I’m confident this is just the beginning of many more wins with ETH-Rwanda by my side!",
+    name: "Jonas Sebera",
+    designation: "Participant",
+    src: testimonial3,
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
-    name: "John Doe React",
-    designation: "@john_Doe4",
-    src: "https://github.com/shadcn.png",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "John Doe React",
-    designation: "@john_Doe5",
-    src: "https://github.com/shadcn.png",
+      "ETH Rwanda’s workshops took me from a total beginner to building my own projects in no time! The hands-on learning, supportive community, and exciting hackathon experience gave me the confidence to dive into the Web3 space!",
+    name: "Olivier",
+    designation: "Participant",
+    src: testimonial4,
   },
 ];
 

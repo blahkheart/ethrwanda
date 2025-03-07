@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Linkedin, Twitter, Github } from "lucide-react";
-
+import { team4, team1 } from "@/assets/images";
 
 interface TeamProps {
   imageUrl: string;
@@ -23,7 +23,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://github.com/shadcn.png",
+    imageUrl: team1,
     name: "Danny Thomx",
     position: "Founder",
     socialNetworks: [
@@ -61,13 +61,14 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://github.com/shadcn.png",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C4E03AQHOXr0L7UUSPg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1647677484479?e=1746662400&v=beta&t=XPNEUN-UQsSl3Va9I5TMNTXD13YaGHpTrmJAXXi3rH8",
     name: "Herve",
     position: "Graphics Design",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "/#",
+        url: "https://www.linkedin.com/in/kajyambere-herve-patience-20911a219/",
       },
 
       {
@@ -100,18 +101,18 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://github.com/shadcn.png",
+    imageUrl: team4,
     name: "Joab",
     position: "Partnerships",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "/#",
+        url: "https://www.linkedin.com/in/joab-niwagaba-0905161b3",
       },
       {
         name: "Twitter",
-        url: "/#",
-      }
+        url: "https://x.com/niwagaba_joab?s=21",
+      },
     ],
   },
 ];

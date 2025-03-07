@@ -8,24 +8,28 @@ import {
   kpakLogo,
   p2eInfernoLogo,
 } from "@/assets/logos";
-
+import { useTheme } from "@/components/theme-provider";
 const sponsors = [unlockLogo, bgLogo, espLogoBlack];
 const partners = [makerStudioLogo, kpakLogo, abiLogo, p2eInfernoLogo];
 
 export const Sponsors = () => {
-  const getSponsorClassNames = (index: number) => `bg-white backdrop-blur-sm rounded-xl ${
-    index === 0 ? "p-0" : "p-6"
-    } hover:bg-white/10 transition-all duration-300 shadow-lg`;
-  
+  const { theme } = useTheme();
+  const getSponsorClassNames = (index: number) =>
+    `bg-white backdrop-blur-sm rounded-xl ${
+      index === 0 ? "p-0" : "p-6"
+    } transition-all duration-300 shadow-lg`;
+
   const getPartnerClassNames = (index: number) =>
     `bg-white backdrop-blur-sm rounded-xl ${
       index < 2 ? "p-0" : "p-6"
-    } hover:bg-white/10 transition-all duration-300 shadow-lg`;
-  
+    } transition-all duration-300 shadow-lg`;
+
   return (
     <section
       id="sponsors-partners"
-      className="flex flex-col pt-24 sm:py-32 bg-[#020617]"
+      className={`flex flex-col pt-24 sm:py-32 ${
+        theme === "dark" ? "bg-[#020617]" : "bg-white"
+      }`}
     >
       <div id="sponsors" className="container mb-36">
         <h2 className="text-center text-4xl lg:text-5xl font-bold text-primary mb-24">

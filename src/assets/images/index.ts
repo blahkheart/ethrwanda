@@ -36,6 +36,18 @@ import interviewRcaInstructor from "./interview_thumbnails/interview_rca_instruc
 import interview2ndTeam from "./interview_thumbnails/interview_2nd_team.webp";
 import interview3rdTeam from "./interview_thumbnails/interview_3rd_team.webp";
 
+import testimonial1 from "./testimonials/testimonial_1.webp";
+import testimonial2 from "./testimonials/testimonial_2.webp";
+import testimonial3 from "./testimonials/testimonial_3.webp";
+import testimonial4 from "./testimonials/testimonial_4.webp";
+
+import team1 from "./team/team_1.webp";
+// import team2 from "./team/team_2.webp";
+// import team3 from "./team/team_3.webp";
+import team4 from "./team/team_4.webp";
+
+import medRecordChain from "../med_record_chain.webp";
+
 export {
   // Awarding Ceremony
   awardingCeremony1,
@@ -74,4 +86,17 @@ export {
   interviewRcaInstructor,
   interview2ndTeam,
   interview3rdTeam,
+
+  // Testimonials
+  testimonial1,
+  testimonial2,
+  testimonial3,
+  testimonial4,
+
+  // Team
+  team1,
+  team4,
+
+  // Projects
+  medRecordChain,
 };

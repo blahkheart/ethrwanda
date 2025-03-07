@@ -1,4 +1,5 @@
 import { Gallery6 } from "@/components/ui/gallery6";
+import { medRecordChain } from "@/assets/images";
 
 const winningProjectsData = {
   heading: "ETH Rwanda Hackathon Genesis 2024 Winners",
@@ -10,8 +11,7 @@ const winningProjectsData = {
       summary:
         "MedRecord Chain secures medical data sharing via blockchain, ensuring privacy, integrity, and patient control while enabling seamless access for authorized providers, improving healthcare efficiency and trust.",
       url: "https://dorahacks.io/buidl/18123",
-      image:
-        "https://cdn.dorahacks.io/static/files/192cd1a6bde661a6fa6c56b4d5b96189.png@128h.webp",
+      image: medRecordChain,
     },
     {
       id: "item-2",

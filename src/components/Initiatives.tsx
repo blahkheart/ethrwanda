@@ -7,6 +7,7 @@ import {
   LightBulbIcon,
   MagnifierIcon,
 } from "./Icons";
+import { useTheme } from "./theme-provider";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -53,10 +54,13 @@ const features: FeatureProps[] = [
 ];
 
 export const Initiatives = () => {
+  const { theme } = useTheme();
   return (
     <section
       id="initiatives"
-      className="text-center py-10 bg-[#020617]"
+      className={`text-center py-10 ${
+        theme === "dark" ? "bg-[#020617]" : "bg-white"
+      }`}
     >
       <div className="container">
         <h2 className="text-3xl lg:text-5xl md:text-4xl font-bold mb-16">
