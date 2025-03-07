@@ -12,9 +12,10 @@ import { AnimatedTestimonials } from "./components/Testimonials";
 import { MissionVision } from "./components/MissionVision";
 import "./App.css";
 import PastEvents from "./components/PastEvents";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import { LoadingScreen } from "./components/ui/loading";
+import { Skeleton } from "@/components/ui/skeleton";
 
 type Testimonial = {
   quote: string;
@@ -72,57 +73,47 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check if all images are loaded
-    const loadImages = async () => {
-      const images = document.querySelectorAll("img");
-      const promises = Array.from(images).map((img) => {
-        if (img.complete) return Promise.resolve();
-        return new Promise((resolve) => {
-          img.onload = resolve;
-          img.onerror = resolve;
-        });
-      });
-
-      await Promise.all(promises);
-    };
-
-    // Check both DOM content and image loading
-    Promise.all([
-      // Wait for DOM content
-      document.readyState === "complete"
-        ? Promise.resolve()
-        : new Promise((resolve) => {
-            window.addEventListener("load", resolve, { once: true });
-          }),
-      // Wait for images
-      loadImages(),
-    ]).then(() => {
-      // Add a small buffer to ensure smooth transition
-      setTimeout(() => setIsLoading(false), 300);
-    });
+    // initial app loading
+    const timer = setTimeout(() => setIsLoading(false), 1500);
+    return () => clearTimeout(timer);
   }, []);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
 
   return (
     <AnimatePresence mode="wait">
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
-        <>
-          <Navbar />
-          <Hero />
-          <PastEvents />
-          <MissionVision />
-          <Sponsors />
-          <Initiatives />
-          <AnimatedTestimonials testimonials={testimonials} />
-          <Cta />
-          <Team />
-          <Newsletter />
-          <FAQ />
-          <Footer />
-          <ScrollToTop />
-        </>
-      )}
+      <Navbar />
+      <Hero />
+      <Suspense
+        fallback={
+          <div className="container mx-auto px-4 py-16">
+            <h2 className="text-4xl lg:text-6xl font-bold text-center mb-16">
+              Past Events & Workshops
+            </h2>
+            <Skeleton layout="timeline" count={2} />
+            <div className="mt-24 mb-16">
+              <h3 className="text-3xl lg:text-5xl text-center font-bold mb-16">
+                Interviews
+              </h3>
+              <Skeleton layout="list" aspectRatio="video" count={3} />
+            </div>
+          </div>
+        }
+      >
+        <PastEvents />
+      </Suspense>
+      <MissionVision />
+      <Sponsors />
+      <Initiatives />
+      <AnimatedTestimonials testimonials={testimonials} />
+      <Cta />
+      <Team />
+      <Newsletter />
+      <FAQ />
+      <Footer />
+      <ScrollToTop />
     </AnimatePresence>
   );
 }

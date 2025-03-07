@@ -13,43 +13,39 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "What is ETH Rwanda?",
+    answer:
+      "ETH Rwanda is a community-focused initiative that aims to educate, coach, connect, and inspire builders, entrepreneurs, creators, and enthusiasts to leverage Ethereum and decentralized technology to build solutions to local challanges in Rwanda.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "How can I participate in ETH Rwanda events and workshops?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "You can join our online community channels (WhatsApp, Instagram, or X) for updates and upcoming event announcements. You can also subscribe to our newsletter to get notified when we organize hackathons, workshops, or other in-person events in Kigali and other cities in Rwanda.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+    question: "Why should I learn to build on Ethereum?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Ethereum is a global, decentralized, and permissionless platform for creating smart contracts and decentralized applications (dApps). Learning to build on Ethereum can open the door to cutting-edge innovations, collaboration with a worldwide developer community, and opportunities to shape the future of finance and the internet.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "What resources are available for beginners in Rwanda?",
+    answer: `We provide beginner-friendly workshops, tutorials, and mentorship opportunities through our "Ethereum For Everyone" program. Whether you’re a developer, creator, entrepreneur, or just curious, our events span topics from fundamental blockchain concepts, to smart contract development, blockchain best practices and real-world use cases.`,
     value: "item-4",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+    question: "How can I get involved or contribute to ETH Rwanda?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "We welcome community contributions of all kinds. You can speak at events, host or assist in workshops, create educational content, or help organize community hackathons. Reach out through our email or social channels to collaborate!",
     value: "item-5",
   },
 ];
 
 export const FAQ = () => {
   return (
-    <section
-      id="faq"
-      className="container py-24 sm:py-48"
-    >
+    <section id="faq" className="container py-24 sm:py-48">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Frequently Asked{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -57,16 +53,9 @@ export const FAQ = () => {
         </span>
       </h2>
 
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full AccordionRoot"
-      >
+      <Accordion type="single" collapsible className="w-full AccordionRoot">
         {FAQList.map(({ question, answer, value }: FAQProps) => (
-          <AccordionItem
-            key={value}
-            value={value}
-          >
+          <AccordionItem key={value} value={value}>
             <AccordionTrigger className="text-left">
               {question}
             </AccordionTrigger>

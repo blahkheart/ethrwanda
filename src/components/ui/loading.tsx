@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import ethRwandaLogo from "../../assets/eth-rwanda-logo.png";
 
 export function LoadingScreen() {
   return (
@@ -20,15 +21,13 @@ export function LoadingScreen() {
           className="flex flex-col items-center"
         >
           <img
-            src="/src/assets/eth-rwanda-logo.png"
+            src={ethRwandaLogo}
             alt="ETH Rwanda Logo"
             className="w-24 h-24 mb-4"
           />
           <div className="space-y-2 text-center">
             <h2 className="text-2xl font-bold text-foreground">ETH Rwanda</h2>
-            <p className="text-sm text-muted-foreground">
-              Loading content...
-            </p>
+            <p className="text-sm text-muted-foreground">Loading content...</p>
           </div>
           <div className="mt-6 h-1 w-48 bg-muted overflow-hidden rounded-full">
             <motion.div
