@@ -148,6 +148,7 @@ const Gallery6 = ({
               <CarouselItem key={item.id} className="pl-4 md:max-w-[452px]">
                 <a
                   href={item.url}
+                  target="_blank"
                   className="group flex flex-col justify-between"
                 >
                   <div>

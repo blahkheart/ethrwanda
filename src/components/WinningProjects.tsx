@@ -1,6 +1,6 @@
 import { Gallery6 } from "@/components/ui/gallery6";
 
-const demoData = {
+const winningProjectsData = {
   heading: "ETH Rwanda Hackathon Genesis 2024 Winners",
   demoUrl: "https://hackathon.ethrwanda.rw",
   items: [
@@ -8,30 +8,33 @@ const demoData = {
       id: "item-1",
       title: "MedRecordChain",
       summary:
-        "Create stunning user interfaces with our comprehensive design system.",
-      url: "#",
-      image: "https://www.shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "MedRecord Chain secures medical data sharing via blockchain, ensuring privacy, integrity, and patient control while enabling seamless access for authorized providers, improving healthcare efficiency and trust.",
+      url: "https://dorahacks.io/buidl/18123",
+      image:
+        "https://cdn.dorahacks.io/static/files/192cd1a6bde661a6fa6c56b4d5b96189.png@128h.webp",
     },
     {
       id: "item-2",
       title: "Startup Raise Funds",
       summary:
-        "Explore our library of customizable components built with shadcn/ui and Tailwind CSS.",
-      url: "#",
-      image: "https://www.shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "Traditional Fund raising for startup lack proper way of secure process of attaracting investors and transparency in fund usage",
+      url: "https://dorahacks.io/buidl/18109",
+      image:
+        "https://cdn.dorahacks.io/static/files/192cccaa3c35276b621c2c6412dbd53d.jpeg@128h.webp",
     },
     {
       id: "item-3",
       title: "Stone Proof",
       summary:
-        "Build websites that look great on any device with our responsive design patterns.",
-      url: "#",
-      image: "https://www.shadcnblocks.com/images/block/placeholder-dark-1.svg",
-    }
+        "StoneProof boosts transparency in the mineral supply chain. Using Ethereum and smart contracts, it ensures secure, traceable certification of assets, promoting integrity and accountability from source to end-user.",
+      url: "https://dorahacks.io/buidl/18148",
+      image:
+        "https://cdn.dorahacks.io/static/files/192cba9788adbe5d6f63bb24d09bd0d0.png@128h.webp",
+    },
   ],
 };
 
 
 export const WinningProjects = () => {
-  return <Gallery6 {...demoData} />;
+  return <Gallery6 {...winningProjectsData} />;
 };
