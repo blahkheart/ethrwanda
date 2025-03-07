@@ -44,9 +44,8 @@ export const MissionVision = () => {
             Mission
           </h2>
           <p className="mt-4  text-left  text-base/6 text-neutral-200">
-            Our mission is to drive blockchain adoption and create impact that
-            results in positive-sum outcomes and externalities in Rwanda, Africa and the world through
-            Ethereum.
+            Our mission is to drive blockchain adoption and create positive-sum outcomes and externalities in Rwanda, Africa and the world through
+            innovation and collaboration using Ethereum.
           </p>
         </WobbleCard>
         <WobbleCard containerClassName="col-span-1">
@@ -54,7 +53,7 @@ export const MissionVision = () => {
             Vision
           </h2>
           <p className="mt-4  text-left  text-base/6 text-neutral-200">
-            To be the leading Web3 community in Rwanda by 2025.
+            Our vision is to become an autonomous, self-sustaining, and self-organizing community of developers, entrepreneurs, creators and enthusiasts making positive real-world impact by building functional and sustainable solutions to local challenges using blockchain technology.
           </p>
         </WobbleCard>
       </LampCard>

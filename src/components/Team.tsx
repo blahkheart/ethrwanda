@@ -29,7 +29,7 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/dannithomx/",
       },
       {
         name: "Twitter",
@@ -48,15 +48,15 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "/#",
       },
       {
         name: "Twitter",
-        url: "https://www.x.com/",
+        url: "/#",
       },
       {
         name: "Github",
-        url: "https://www.github.com/",
+        url: "/#",
       },
     ],
   },
@@ -67,16 +67,16 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "/#",
       },
 
       {
         name: "Twitter",
-        url: "https://www.x.com/",
+        url: "/#",
       },
       {
         name: "Github",
-        url: "https://www.github.com/",
+        url: "/#",
       },
     ],
   },
@@ -87,15 +87,15 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "/#",
       },
       {
         name: "Twitter",
-        url: "https://www.x.com/",
+        url: "/#",
       },
       {
         name: "Github",
-        url: "https://www.github.com/",
+        url: "/#",
       },
     ],
   },
@@ -106,11 +106,11 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "/#",
       },
       {
         name: "Twitter",
-        url: "https://www.x.com/",
+        url: "/#",
       }
     ],
   },
