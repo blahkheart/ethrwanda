@@ -36,7 +36,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://x.com/_ethrwanda"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               X

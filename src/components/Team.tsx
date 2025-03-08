@@ -42,21 +42,17 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://github.com/shadcn.png",
-    name: "Jabo Prosper",
-    position: "Operations Lead",
+    imageUrl: team4,
+    name: "Joab",
+    position: "Partnerships",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "/#",
+        url: "https://www.linkedin.com/in/joab-niwagaba-0905161b3",
       },
       {
         name: "Twitter",
-        url: "/#",
-      },
-      {
-        name: "Github",
-        url: "/#",
+        url: "https://x.com/niwagaba_joab?s=21",
       },
     ],
   },
@@ -70,49 +66,53 @@ const teamList: TeamProps[] = [
         name: "Linkedin",
         url: "https://www.linkedin.com/in/kajyambere-herve-patience-20911a219/",
       },
-
-      {
-        name: "Twitter",
-        url: "/#",
-      },
-      {
-        name: "Github",
-        url: "/#",
-      },
+      // {
+      //   name: "Twitter",
+      //   url: "/#",
+      // },
+      // {
+      //   name: "Github",
+      //   url: "/#",
+      // },
     ],
   },
+  {
+    imageUrl: "https://github.com/shadcn.png",
+    name: "Jabo Prosper",
+    position: "Operations Lead",
+    socialNetworks: [
+      // {
+      //   name: "Linkedin",
+      //   url: "/#",
+      // },
+      // {
+      //   name: "Twitter",
+      //   url: "/#",
+      // },
+      // {
+      //   name: "Github",
+      //   url: "/#",
+      // },
+    ],
+  },
+
   {
     imageUrl: "https://github.com/shadcn.png",
     name: "Kelly",
     position: "Media coverage",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "/#",
-      },
-      {
-        name: "Twitter",
-        url: "/#",
-      },
-      {
-        name: "Github",
-        url: "/#",
-      },
-    ],
-  },
-  {
-    imageUrl: team4,
-    name: "Joab",
-    position: "Partnerships",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/joab-niwagaba-0905161b3",
-      },
-      {
-        name: "Twitter",
-        url: "https://x.com/niwagaba_joab?s=21",
-      },
+      // {
+      //   name: "Linkedin",
+      //   url: "/#",
+      // },
+      // {
+      //   name: "Twitter",
+      //   url: "/#",
+      // },
+      // {
+      //   name: "Github",
+      //   url: "/#",
+      // },
     ],
   },
 ];

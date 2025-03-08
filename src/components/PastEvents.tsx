@@ -38,7 +38,7 @@ const interviews = [
     description: "Discussing their project at ETH Rwanda Hackathon",
     thumbnailSrc: interviewFourthTeam,
     videoSrc:
-      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/fourth_team.mp4",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const interviews = [
     description: "Talking about the RCA program",
     thumbnailSrc: interviewRcaInstructor,
     videoSrc:
-      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/instructor_at_rwanda_coding_academy.mp4"
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const interviews = [
     description: "Discussing their project at ETH Rwanda Hackathon",
     thumbnailSrc: interview2ndTeam,
     videoSrc:
-      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/second_team.mp4"
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const interviews = [
     description: "Discussing their project at ETH Rwanda Hackathon",
     thumbnailSrc: interview3rdTeam,
     videoSrc:
-      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/a7420241108_1207_2.mp4",
+      "https://p2einferno.com/eth-rwanda/awarding_ceremony/videos/third_team.mp4",
   },
 ];
 
