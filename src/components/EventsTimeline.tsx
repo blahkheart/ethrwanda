@@ -18,7 +18,7 @@ const EventItem = ({ children }: { children: React.ReactNode }) => {
       className=" text-neutral-700 dark:text-neutral-300 text-xs md:text-lg mb-2"
     >
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95}} className="flex gap-2 items-center">
-        <CheckCircle className="w-5 h-5 text-primary text-[#2ABA46]" />
+        <CheckCircle className="w-5 h-5 text-primary text-green-700" />
       {children}
       </motion.div>
     </motion.div>
