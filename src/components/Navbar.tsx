@@ -36,6 +36,10 @@ const routeList: RouteProps[] = [
     href: "#faq",
     label: "FAQ",
   },
+  {
+    href: "https://faucet.ethrwanda.rw",
+    label: "Faucet",
+  },
 ];
 
 export const Navbar = () => {

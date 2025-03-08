@@ -76,6 +76,16 @@ export const Footer = () => {
               Interviews
             </a>
           </div>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="https://faucet.ethrwanda.rw"
+              target="_blank"
+              className="opacity-60 hover:opacity-100"
+            >
+              Faucet
+            </a>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
