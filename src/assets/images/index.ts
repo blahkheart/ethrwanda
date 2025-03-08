@@ -42,6 +42,8 @@ import testimonial3 from "./testimonials/testimonial_3.webp";
 import testimonial4 from "./testimonials/testimonial_4.webp";
 
 import team1 from "./team/team_1.webp";
+import team2 from "./team/team_2.webp";
+import team3 from "./team/team_3.webp";
 import team4 from "./team/team_4.webp";
 
 import medRecordChain from "../med_record_chain.webp";
@@ -95,6 +97,8 @@ export {
 
   // Team
   team1,
+  team2,
+  team3,
   team4,
 
   // Projects

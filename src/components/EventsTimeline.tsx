@@ -1,10 +1,29 @@
 import { Timeline } from "@/components/ui/timeline";
+import { motion } from "framer-motion";
+import { CheckCircle } from "lucide-react";
 import {
   technicalWorkshop1_1,
   technicalWorkshop1_3,
   technicalWorkshop4_1,
   awardingCeremony3,
 } from "../assets/images";
+
+const EventItem = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className=" text-neutral-700 dark:text-neutral-300 text-xs md:text-lg mb-2"
+    >
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95}} className="flex gap-2 items-center">
+        <CheckCircle className="w-5 h-5 text-primary text-[#2ABA46]" />
+      {children}
+      </motion.div>
+    </motion.div>
+  );
+};
 
 export function PastEventsTimeline() {
   const data = [
@@ -53,28 +72,18 @@ export function PastEventsTimeline() {
       title: "Events",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-xl font-normal mb-4">
             Workshops and activities
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Ethereum For Everyone | Creators Workshop
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Ethereum For Everyone | Entrepreneurs Workshop
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Ethereum For Everyone | Developer Workshops
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ ETH Rwanda Social Hour
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ ETH Rwanda Hackathon: Genesis
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ ETH Rwanda Hackathon Awarding Ceremony
-            </div>
+            <EventItem>Ethereum For Everyone | Creators Workshop</EventItem>
+            <EventItem>
+              Ethereum For Everyone | Entrepreneurs Workshop
+            </EventItem>
+            <EventItem>Ethereum For Everyone | Developer Workshops</EventItem>
+            <EventItem>ETH Rwanda Social Hour</EventItem>
+            <EventItem>ETH Rwanda Hackathon: Genesis</EventItem>
+            <EventItem>ETH Rwanda Hackathon Awarding Ceremony</EventItem>
           </div>
         </div>
       ),

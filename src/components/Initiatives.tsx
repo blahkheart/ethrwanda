@@ -67,8 +67,16 @@ export const Initiatives = () => {
           Programs & Initiatives
         </h2>
         <p className="md:w-3/4 mx-auto mt-4 mb-32 text-xl text-muted-foreground">
-          Join our community and discover how we're making blockchain technology
-          accessible through education, collaboration, and innovative programs.
+          <a
+            className="text-[#2DC1EB] hover:text-blue-400"
+            href="https://chat.whatsapp.com/KYkYE8C2VUBCvM1gv7mQq8"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Join our community
+          </a>{" "}
+          and discover how we're making blockchain technology accessible through
+          education, collaboration, and innovative programs.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-48">
