@@ -150,7 +150,6 @@ const GalleryModal = ({
   setSelectedItem,
   mediaItems,
 }: GalleryModalProps) => {
-
   if (!isOpen) return null;
 
   const handleThumbnailClick = (e: React.MouseEvent, item: MediaItemType) => {
@@ -342,7 +341,7 @@ const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = ({
                 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                 dragElastic={1}
                 onDragStart={() => setIsDragging(true)}
-                onDragEnd={(e, info) => {
+                onDragEnd={(_, info) => {
                   setIsDragging(false);
                   const moveDistance = info.offset.x + info.offset.y;
                   if (Math.abs(moveDistance) > 50) {
