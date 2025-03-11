@@ -1,5 +1,5 @@
 import { Gallery6 } from "@/components/ui/gallery6";
-import { medRecordChain } from "@/assets/images";
+import { medRecordChain, stoneProof } from "@/assets/images";
 
 const winningProjectsData = {
   heading: "ETH Rwanda Hackathon Genesis 2024 Winners",
@@ -28,8 +28,7 @@ const winningProjectsData = {
       summary:
         "StoneProof boosts transparency in the mineral supply chain. Using Ethereum and smart contracts, it ensures secure, traceable certification of assets, promoting integrity and accountability from source to end-user.",
       url: "https://dorahacks.io/buidl/18148",
-      image:
-        "https://cdn.dorahacks.io/static/files/192cba9788adbe5d6f63bb24d09bd0d0.png@128h.webp",
+      image: stoneProof,
     },
   ],
 };

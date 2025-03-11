@@ -47,6 +47,7 @@ import team3 from "./team/team_3.webp";
 import team4 from "./team/team_4.webp";
 
 import medRecordChain from "../med_record_chain.webp";
+import stoneProof from "../stone_proof.webp";
 
 export {
   // Awarding Ceremony
@@ -103,4 +104,5 @@ export {
 
   // Projects
   medRecordChain,
+  stoneProof,
 };

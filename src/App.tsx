@@ -34,13 +34,14 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "If you’re thinking of coming to an ETH Rwanda event, I was say definitely do it tech and the digital advancement is part of the new frontier of humanity and society and learning how to work with these kinds of programs as opposed to fearing them because they’re unknown is overall helpful",
+      "If you’re thinking of coming to an ETH Rwanda event, I would say definitely do it! Tech and digital advancement are part of the new frontier of humanity and society, and learning how to work with these kinds of programs, as opposed to fearing them because they’re unknown, is overall helpful.",
     name: "Kameelah",
     designation: "Participant",
     src: testimonial1,
   },
   {
-    quote: "Being part of ETH-Rwanda has been an incredible journey for me. From the moment I joined, I felt welcomed into a community that’s not just passionate about blockchain, but also deeply committed to helping developers like me grow. ETH-Rwanda gave me my first real chance to showcase my skills at the ETH-Rwanda Hackathon, where I got to collaborate, learn, and even walk away with a prize! Beyond that, the knowledge, connections, and opportunities I’ve gained from this community are unmatched. I’m truly grateful to be part of ETH-Rwanda, and I’m excited to keep growing alongside this amazing team — and I’m confident this is just the beginning of many more wins with ETH-Rwanda by my side!",
+    quote:
+      "Being part of ETH-Rwanda has been an incredible journey for me. From the moment I joined, I felt welcomed into a community that’s not just passionate about blockchain, but also deeply committed to helping developers like me grow. ETH-Rwanda gave me my first real chance to showcase my skills at the ETH-Rwanda Hackathon, where I got to collaborate, learn, and even walk away with a prize! Beyond that, the knowledge, connections, and opportunities I’ve gained from this community are unmatched. I’m truly grateful to be part of ETH-Rwanda, and I’m excited to keep growing alongside this amazing team — and I’m confident this is just the beginning of many more wins with ETH-Rwanda by my side!",
     name: "Jonas Sebera",
     designation: "Participant",
     src: testimonial2,
